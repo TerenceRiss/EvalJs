@@ -1,0 +1,32 @@
+.btn {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn_primary {
+  background: rgb(193, 0, 165);
+  background: linear-gradient(90deg, rgb(193, 0, 165) 0%, rgb(255, 17, 119) 35%, rgb(255, 115, 81) 100%);
+  color: #ffffff;
+}
+
+.btn_primary:hover, .btn_primary:active, .btn_primary:focus {
+  background: #8e0079;
+  background: linear-gradient(90deg, #8e0079 0%, #dd005f 35%, #ff4a1e 100%);
+}
+
+#info_comp {
+  display: none;
+}/*# sourceMappingURL=buttons.css.map */

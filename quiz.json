@@ -1,0 +1,320 @@
+
+ [
+  {
+        "question" : "Quel élément HTML permet d’integrer du JavaScript dans une page ?",
+        "answers": [
+            "<js> ",
+            "<Javascript",
+            "<script>",
+            "scripting"  
+        ],
+        "rightAnswers" : 2,
+        "details" : " Il y a deux méthodes pour utiliser script : une qui sert lorsqu'on souhaite utiliser un script contenu dans un fichier tiers et une qui sert lorsqu'on intègre directement le code du script dans la page web."
+
+    },
+
+    {
+     "question" : "Quelle est la syntaxe correcte pour référencer un script externe appelé monScript.js dans unepage ?",  
+     "answers" : [
+        "src=monScript.js",
+        "link=monScript",
+        "name=monScript",
+        "href=monScript.js"
+     ],
+     "rightAnswers" : 0,
+     "details" : "L'élément HTML <script> est utilisé pour intégrer ou faire référence à un script exécutable. Cela fait généralement référence à du code JavaScript mais ce peut également être un autre type de script"
+
+    },
+
+    {
+        "question" : "Ou insère-t-on du JavaScript (code ou lien) dans une page ?",
+        "answers" : [
+            "<head>",
+            "<body>",
+            "<head> et <body>",
+            "<meta>"
+
+        ],
+        "rightAnswers" : 2,
+        "details" : "Traditionnellement il était d'usage de placer la balise <script> entre les tags <head> et </head> , cependant il est actuellement recommandé de la placer en fin de document juste avant </body> pour ne pas bloquer le chargement de la page, et exécuter les scripts uniquement lorsque le DOM est prêt."
+    },
+
+    {
+        "question" : "Comment ajouter un commentaire en JavaScript ?",
+        "answers" : [
+            "<!-- Ceci est un commentaire-->",
+            "ceci est un commentaire",
+            "#ceci est un commentaire#",
+            "/* Ceci est un commentaire */"
+        ],
+        "rightAnswers" : 3,
+        "details" : "Pour écrire un commentaire monoligne, on utilisera un double slash // qui sera suivi du texte de notre commentaire (ou éventuellement la syntaxe multilignes)."
+    },
+
+    {
+        "question" : "En JavaScript, comment déclarer une variable maVariable pour stocker une valeur de type Number ?",
+        "answers" : [
+            "var Number ma variable ",
+            "var maVariable = newNumber()",
+            "Number maVariable",
+            "var maVariable"
+        ],
+        "rightAnswers" : [
+            1,
+            3
+        ],
+        "details" : " L'instruction var (pour variable) permet de déclarer une variable et éventuellement d'initialiser sa valeur."
+    },
+
+    {
+     "question" : "Que renvoie l’exécution du code message='bonjour' ; alert(typeof message) ; ?",
+     "answers" : [
+        "boolean",
+        "'typeOf message",
+        "undefined",
+        "string"
+     ],
+     "rightAnswers" : 3,
+     "details" : "L'opérateur typeof renvoie une chaîne qui indique le type de son opérande."   
+    },
+
+    {
+        "question" : " Qu’affiche le code alert('10'+'5'); ? ",
+        "answers" : [
+            "'10' + '5' ",
+            "15",
+            "105",
+            "15"
+        ],
+        "rightAnswers" : 2,
+        "details" : "si un signe + est rencontré, les éléments a droite seront concatenés"
+    },
+
+    {
+        "question" : "Qu’affiche le code isNaN('20') ; ? ",
+        "answers" : [
+            "20",
+            "'20'",
+            "true",
+            "false"
+        ],
+        "rightAnswers" : 3,
+        "details" : "À la différence des autres valeurs JavaScript, il est impossible d'utiliser les opérateurs d'égalité faible et stricte (== et ===) afin de déterminer si une valeur est ou n'est pas réellement NaN. En effet NaN == NaN et NaN === NaN renvoient false tous les deux. C'est pour cela qu'il est nécessaire d'avoir la fonction isNaN()."
+    },
+
+    {
+        "question" : "Que renvoie l’ex´ecution du code alert(4 >= 4 && (2 > 3 || (6%3 < 1))) ; ?",
+        "answers" : [
+            "erreur",
+            "undifined",
+            "true",
+            "false"
+        ],
+        "rightAnswers" : 3,
+        "details" : "L'opérateur ET logique (&&) (conjonction logique) renvoie vrai si et uniquement si ses deux opérandes sont true ou équivalents à true. Il est généralement utilisé avec des valeurs booléennes et, quand c'est le cas, il renvoie une valeur booléenne. Toutefois, l'opérateur && renvoie en fait la valeur d'un de ses opérandes et, si cet opérateur est utilisé avec des valeurs non-booléennes, il renverra une valeur non-booléenne."
+    },
+
+    {
+        "question" : "Comment écrit-on en JavaScript la condition pour repr´esenter l’alternative Si x est égal à 4 ?",
+        "answers" : [
+            "if (x = 4) then",
+            "if x equal 4",
+            "if (x == 4)",
+            "if x = 4 then"
+        ],
+        "rightAnswers" : 2,
+        "details" : "L'instruction if exécute une instruction si une condition donnée est vraie ou équivalente à vrai."
+    },
+
+    {
+        "question" : "Comment écrit-on en JavaScript la condition pour représenter l’alternative Si x n’est pas ´egal `a 2 ?",
+        "answers" : [
+            "if (x <> 2)",
+            "if (x != 2)",
+            "if x <> 2",
+            "if (x != 2) then"
+        ],
+        "rightAnswers" : 1,
+        "details" : "404 erreur not found"
+    },
+
+    {
+        "question" : "Quelle est la syntaxe correcte en JavaScript pour l’instruction de boucle for ?",
+        "answers" : [
+            "for i = 1 to 4",
+            "for (i = 0 ; i <= 4)",
+            " for (i <= 4 ; i++)",
+            "for (i = 0 ; i <= 4 ; i++)"
+        ],
+        "rightAnswers" : 3,
+        "details" : "L'instruction for crée une boucle composée de trois expressions optionnelles séparées par des points-virgules et encadrées entre des parenthèses qui sont suivies par une instruction (généralement une instruction de bloc) à exécuter dans la boucle."       
+    },
+
+    {
+        "question" : "Pourquoi doit-on préciser plusieurs valeurs pour la propriété font-family ?",
+        "answers" : [
+            "Pour laisser la possibilité à l'utilisateur de choisir celle qu'il préfère",
+            "Car certaines polices peuvent ne pas être lues par un navigateur",
+            "Il n'est pas nécessaire de préciser plusieurs valeurs",
+            "ca fait jolie"
+        ],
+        "rightAnswers" : 1,
+        "details" : "Certaines versions de certains navigateurs peuvent ne pas supporter des polices spécifiques. Pour cela, nous préciserons toujours plusieurs noms de police en valeur de font-family."
+    },
+
+    {
+        "question" : "Pourquoi utiliser les Google Fonts ?",
+        "answers" : [
+            "Car Google favorisera notre site si on utilise une de ses polices",
+            "Car les polices de Google sont plus jolies",
+            "Car ces polices vont pouvoir être lues par tous les navigateurs",
+            "C'est mieux ainsi"
+        ],
+        "rightAnswers" : 2,
+        "details" : "En utilisant une police de Google, vous êtes assuré que tous vos utilisateurs pourront lire votre contenu."
+    },
+
+    {
+        "question" : "A quoi sert la propriété font-weight ?",
+        "answers" : [
+            "A calculer le cosinus d'un angle",
+            "A modifier le poids d'une police",
+            "A modifier l'inclinaison d'une police",
+            "A modifier la taille d'une police"           
+        ],
+        "rightAnswers" : 1,
+        "details" : "La propriété font-weight, comme son nom l'indique, va nous permettre de gérer le poids d'une police (mise en gras, etc.)."
+    },
+
+    {
+        "question" : "Quelle est la différence entre les valeurs de type RGB et RGBa",
+        "answers" : [
+            "RGB utilise des notations hexadécimales, ce qui n'est pas le cas de RGBa",
+            "RGB gère la transparence à l'inverse de RGBa",
+            "A composer une comptine",
+            "RGBa gère la transparence à l'inverse de RGB"
+        ],
+        "rightAnswers" : 3,
+        "details" : "Les valeurs RGBa acceptent un paramètre qui nous permet de définir le niveau d'opacité d'un texte."
+    },
+
+    {
+        "question" : "Que représentent les deux premiers chiffres composant une notation hexadécimale ?",
+        "answers" : [
+            "Une intensité de rouge",
+            "Une intensité de bleu",
+            "Une intensité de vert",
+            "Une intensité de gris"
+        ],
+        "rightAnswers" : 0,
+        "details" : "Les deux premiers chiffres représentent l'intensité de rouge dont va être composée notre couleur, les deux suivants l'intensité de vert et les deux derniers l'intensité de bleu."
+    },
+
+    {
+        "question" : "Généralement, on donne une valeur à line-height égale à...",
+        "answers" : [
+            "La taille de notre texte",
+            "Py multiplié par lui même",
+            "1,5 fois la taille de notre texte",
+            "2 fois la taille de notre texte"
+        ],
+        "rightAnswers" : 2,
+        "details" : " Il est considéré comme une bonne pratique de régler la valeur du line-height à 1,5 fois la taille de nos textes."
+    },
+
+    {
+        "question" : "Combien faut il donner de valeurs à text-shadow ?",
+        "answers" : [
+            "2 valeurs",
+            "10 valeurs",
+            "3 valeurs",
+            "4 valeurs"
+        ],
+        "rightAnswers" : 3,
+        "details" : " Il faut donner 4 valeurs à text-shadow. Les trois premières valeurs vont définir l'emplacement et la taille de l'ombre, tandis que la dernière définit sa couleur."
+    },
+
+    {
+        "question" : "Les trois premières valeurs de text-shadow servent à indiquer, dans l'ordre...",
+        "answers" : [
+            "La projection horizontale de l'ombre, la projection verticale de l'ombre et le rayon de propagation de l'ombre",
+            "la réponse B",
+            "La projection verticale de l'ombre, la projection horizontale de l'ombre et le rayon de propagation de l'ombre",
+            "La projection horizontale de l'ombre, la projection verticale de l'ombre et la couleur de l'ombre"
+        ],
+        "rightAnswers" : 0,
+        "details" : "Les quatre valeurs de text-shadow servent à préciser dans l'ordre la projection horizontale de l'ombre, la projection verticale de l'ombre, le rayon de propagation de l'ombre et la couleur de l'ombre."
+    },
+
+    {
+        "question" : "Quelle organisation définit les standards Web?",
+        "answers" : [
+            "Apple Inc",
+            "IBM Corporation",
+            "World Wild Web Consortium",
+            "Microsoft Corporation"
+        ],
+        "rightAnswers" : 2,
+        "details" :"Le World Wide Web Consortium (W3C) est une communauté internationale qui développe des normes ouvertes pour assurer la croissance à long terme du Web."
+    },
+
+    {
+        "question" : "HTML est considéré comme ______ ?",
+        "answers" : [
+            "Langage de programmation",
+            "Langage POO",
+            "Langage de haut niveau",
+            "Langage de balisage"
+        ],
+        "rightAnswers" : 3,
+        "details" : "Les langages de balisage sont les langages du Web. Ces langages de balisage incluent HTML, XML et XHTML"
+    },
+
+    {
+        "question" : "HTML utilise des ______?",
+        "answers" : [
+            "Balises définis par l'utilisateur",
+            "Balises prédéfinis",
+            "Balises fixes définis par le langage",
+            "Balises uniquement pour les liens"
+        ],
+        "rightAnswers" : 2,
+        "details" : "Les balises ouvrantes se composent de deux chevrons"
+    },
+
+    {
+        "question" : "HTML a été proposé pour la première fois l’année ___.",
+        "answers" : [
+            "1980",
+            "1990",
+            "1995",
+            "2000"
+        ],
+        "rightAnswers" : 1,
+        "details" : "son créateur est Tim Berners-Lee"
+        },
+
+        {
+            "question" : "Lequel des éléments suivants n’est pas un exemple de navigateur?",
+            "answers" :[
+                "Mozilla Firefox",
+                "Netscape",
+                "Microsoft Bing",
+                "Opéra"
+            ],
+            "rightAnswers" :2,
+            "details" : "C'est un moteur de recherche"
+        },
+
+        {
+            "question" : "Si nous souhaitons définir le style d’un seule élément, quel sélecteur css utiliserons-nous?",
+            "answers" :[
+                "id",
+                "text",
+                "class",
+                "name"
+            ],
+            "rightAnswers" : 0,
+            "details" : "L'attribut universel id définit un identifiant qui doit être unique pour l'ensemble du document. "
+        }
+]

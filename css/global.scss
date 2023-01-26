@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+html {
+    background: rgb(193, 0, 165);
+    background: url('../img/star-solid.svg'),
+    url('../img/star-solid.svg'),
+    url('../img/star-solid.svg'),
+    url('../img/star-solid.svg'),
+    url('../img/star-solid.svg'),
+    url('../img/astronaut.svg'),
+    linear-gradient(190deg, rgba(193,0,165,1) 0%, rgba(11,29,139,1) 50%, rgba(11,29,139,1) 100%);    background-size: cover;
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+    background-position: 95% -1%, 15% 20%, 70% 55%, 5% 70%, 80% 85%, 0% 101%;
+    background-size: 40px, 60px, 50px, 30px, 40px, 60px, cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+html,body {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    padding-top: 50px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.content {
+    width: min(100%, 350px);
+}
