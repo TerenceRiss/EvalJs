@@ -21,10 +21,6 @@ html, body {
   width: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 body {
   padding-top: 50px;
   display: flex;
@@ -68,6 +64,10 @@ body {
 
 #info_comp {
   display: none;
+}
+
+.input_name {
+  background-color: black;
 }
 
 .header {

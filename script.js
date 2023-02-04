@@ -85,11 +85,15 @@ fetch('quiz.json')
                
                // stocker le score et le nom dans le local storage
                document.getElementById('gameName')
-               let gameName = document.getElementById('inputName')
-               const scores = [
+               let gameName = document.getElementById('inputName').value;
+               const scores = 
                   {"nom": gameName, "score": score}
-              ];
-               localStorage.setItem ("scores", JSON.stringify(scores))
+              ;
+              
+              const storeData = JSON.parse(localStorage.getItem("score")) ?? [];
+              storeData.push(scores)
+               
+               localStorage.setItem ("scores", JSON.stringify(storeData)) 
 
                window.location.assign("halloffame.html")
                return;

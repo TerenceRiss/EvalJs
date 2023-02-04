@@ -1,8 +1,5 @@
 // je récupère les scores dans le localstorage
-const scores = [
-    {"nom": "vincent", "score": 25},
-    {"nom": "Terence", "score": 24}
-];
+const scores =  JSON.parse(localStorage.getItem("scores")) ?? [];
 
 // je récupère le <ol> qui contiendra les scores
 const olElt = document.getElementById("leaderboard");
